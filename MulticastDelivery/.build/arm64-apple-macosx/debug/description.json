@@ -1,0 +1,396 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MulticastDiscovery-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources",
+      "importPath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "MulticastDiscovery",
+      "moduleOutputPath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule",
+      "objects" : [
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "MulticastDiscovery_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "multicastdelivery"
+      ],
+      "outputFileMapPath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift",
+        "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift"
+      ],
+      "tempsPath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MulticastDiscovery" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MulticastDiscovery",
+      "-package-name",
+      "multicastdelivery",
+      "-c",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift",
+      "-I",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "MulticastDiscovery_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "multicastdelivery",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MulticastDiscovery" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist"
+    },
+    "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources"
+    },
+    "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList"
+    },
+    "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

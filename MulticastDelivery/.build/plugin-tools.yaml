@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MulticastDiscovery-arm64-apple-macosx26.0-debug.exe": ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe>"]
+  "MulticastDiscovery-arm64-apple-macosx26.0-debug.module": ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe>","<MulticastDiscovery-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe>","<MulticastDiscovery-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery":
+    is-mutated: true
+commands:
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist"]
+    description: "Write auxiliary file /Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist"
+
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources"]
+    description: "Write auxiliary file /Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources"
+
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList"
+
+  "/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<MulticastDiscovery-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule"]
+    outputs: ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.MulticastDiscovery-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/MulticastDiscovery"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug","-o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery","-module-name","MulticastDiscovery","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_MulticastDiscovery_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx10.13","-Xlinker","-add_ast_path","-Xlinker","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.MulticastDiscovery-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist"]
+    outputs: ["<MulticastDiscovery-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/MulticastDiscovery"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery-entitlement.plist","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery"]
+
+  "C.MulticastDiscovery-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Application.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/CommandLineParser.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastDelivery.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/MulticastService.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/NetworkInterface.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Peer.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/PeerManager.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/Utils.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources"]
+    outputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Application.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/CommandLineParser.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastDelivery.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/MulticastService.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/NetworkInterface.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Peer.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/PeerManager.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/Utils.swift.o","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule"]
+    description: "Compiling Swift Module 'MulticastDiscovery' (8 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MulticastDiscovery","-emit-dependencies","-emit-module","-emit-module-path","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules/MulticastDiscovery.swiftmodule","-output-file-map","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/output-file-map.json","-incremental","-c","@/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/MulticastDiscovery.build/sources","-I","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","MulticastDiscovery_main","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","multicastdelivery"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/MulticastDelivery/","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/Package.swift","/Users/veronikamoskaluk/Desktop/Networks/MulticastDelivery/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
